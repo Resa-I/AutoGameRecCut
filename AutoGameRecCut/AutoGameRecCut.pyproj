@@ -1,0 +1,111 @@
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>75f99c21-aa60-4409-9bc6-bb411fe7f941</ProjectGuid>
+    <ProjectHome>
+    </ProjectHome>
+    <StartupFile>main.py</StartupFile>
+    <SearchPath>
+    </SearchPath>
+    <WorkingDirectory>.</WorkingDirectory>
+    <OutputPath>.</OutputPath>
+    <Name>AutoGameRecCut</Name>
+    <RootNamespace>AutoGameRecCut</RootNamespace>
+    <IsWindowsApplication>True</IsWindowsApplication>
+    <InterpreterId>Global|PythonCore|3.9</InterpreterId>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <DebugSymbols>true</DebugSymbols>
+    <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
+  </PropertyGroup>
+  <ItemGroup>
+    <Folder Include="Controller\" />
+    <Folder Include="Model\" />
+    <Folder Include="controller\cService\" />
+    <Folder Include="model\Frame_Capture\" />
+    <Folder Include="controller\cService\Obs\" />
+    <Folder Include="model\FrameAnalyzer\" />
+    <Folder Include="model\Frame_Capture\Capture_Sources\" />
+    <Folder Include="model\Loop\" />
+    <Folder Include="model\Loop\lService\" />
+    <Folder Include="z_Main_Service\" />
+    <Folder Include="z_Builder\" />
+    <Folder Include="Ressourcen\Kill_signs\" />
+    <Folder Include="ServiceRessourcen\" />
+    <Folder Include="Ressourcen\" />
+    <Folder Include="Ressourcen\Icon\" />
+    <Folder Include="View\" />
+    <Folder Include="view\vService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="controller\cService\Observable.py" />
+    <Compile Include="model\Loop\BaseAsyncLoop.py" />
+    <Compile Include="z_Main_Service\Async_Scheduler.py" />
+    <Compile Include="z_Main_Service\Logger.py" />
+    <Compile Include="Model\Auto_rec_detect.py" />
+    <Compile Include="model\Frame_Capture\Frame_Capture_Factory.py" />
+    <Compile Include="model\Frame_Capture\Capture_Sources\Frame_Capture_OBS.py" />
+    <Compile Include="model\Frame_Capture\IFrameCaptureInterface.py" />
+    <Compile Include="model\Loop\Auto_rec_loop.py" />
+    <Compile Include="model\Loop\Kill_detect_loop.py" />
+    <Compile Include="controller\cService\OBS_Manager.py" />
+    <Compile Include="Controller\GuiController.py" />
+    <Compile Include="controller\cService\Detect_gpu.py" />
+    <Compile Include="Controller\ModelController.py" />
+    <Compile Include="Controller\__init__.py" />
+    <Compile Include="gpt yoloOpencv.py" />
+    <Compile Include="model\FrameAnalyzer\Frame_Analyzer_for_AutoRec.py" />
+    <Compile Include="model\FrameAnalyzer\Frame_Analyzer_for_kill_detect.py" />
+    <Compile Include="model\Frame_Capture\Capture_Sources\Frame_Capture_File.py" />
+    <Compile Include="Model\Kill_detect.py" />
+    <Compile Include="model\Loop\lService\Kill_rec_threshold_lister.py" />
+    <Compile Include="model\Loop\lService\__init__.py" />
+    <Compile Include="model\Loop\__init__.py" />
+    <Compile Include="Model\Vid_Cutter.py" />
+    <Compile Include="Model\__init__.py" />
+    <Compile Include="ServiceRessourcen\Resource_path_for_exe.py" />
+    <Compile Include="View\GuiView.py" />
+    <Compile Include="view\vService\GuiSettingsSaver.py" />
+    <Compile Include="view\vService\InputValid.py" />
+    <Compile Include="main.py" />
+    <Compile Include="Model\VideoAnalyzer_yoloV8.py" />
+    <Compile Include="controller\cService\Obs\OBS_Close.py" />
+    <Compile Include="controller\cService\Obs\OBS_ClientManager.py" />
+    <Compile Include="controller\cService\Obs\OBS_Commands.py" />
+    <Compile Include="controller\cService\Obs\OBS_Open.py" />
+    <Compile Include="z_Builder\AppBuilder.py" />
+    <Compile Include="z_Builder\Application.py" />
+  </ItemGroup>
+  <ItemGroup>
+    <InterpreterReference Include="Global|PythonCore|3.9" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="controller\cService\Obs\OBS_WebSocket.py" />
+    <Content Include="Ressourcen\Icon\app_icon.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <Interpreter Include="env\">
+      <Id>env</Id>
+      <Version>3.13</Version>
+      <Description>env (Python 3.13 (64-bit))</Description>
+      <InterpreterPath>Scripts\python.exe</InterpreterPath>
+      <WindowsInterpreterPath>Scripts\pythonw.exe</WindowsInterpreterPath>
+      <PathEnvironmentVariable>PYTHONPATH</PathEnvironmentVariable>
+      <Architecture>X64</Architecture>
+    </Interpreter>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Python Tools\Microsoft.PythonTools.targets" />
+  <!-- Uncomment the CoreCompile target to enable the Build command in
+       Visual Studio and specify your pre- and post-build commands in
+       the BeforeBuild and AfterBuild targets below. -->
+  <!--<Target Name="CoreCompile" />-->
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+</Project>

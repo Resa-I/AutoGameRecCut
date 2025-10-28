@@ -1,0 +1,13 @@
+{
+    "input_path": "F:\\samlpe_vids\\cuts\\testkurz",
+    "output_path": "F:/samlpe_vids/cuts",
+    "fps": 11,
+    "reaction_time": 10,
+    "kill_rec_threshold": 5,
+    "auto_rec": false,
+    "auto_analysis": false,
+    "auto_analyse": false,
+    "source": "Windows API",
+    "pre_sec": 2,
+    "post_sec": 3
+}
