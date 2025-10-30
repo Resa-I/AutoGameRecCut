@@ -97,14 +97,12 @@ class GuiView(QMainWindow):
         self.source_dropdown = QComboBox()
         self.source_dropdown.addItems(["OBS", "Windows API"])
 
-        # Erste Zeile
         layout.addWidget(self.auto_rec_checkbox, 0, 1)
         layout.addWidget(self.auto_analysis_checkbox, 0, 0)
         layout.addWidget(self.start_button, 0, 2)
         layout.addWidget(self.source_label, 0, 4)
         layout.addWidget(self.source_dropdown, 1, 4)
 
-        # Zweite Zeile → Stop-Button
         layout.addWidget(self.start_button, 1, 0)
         layout.addWidget(self.stop_button, 1, 1)
         
