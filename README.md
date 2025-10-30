@@ -72,6 +72,7 @@ I started experimenting with YOLOv8 and wanted to build my first real-time appli
 
 
 Analysiert Frames aus verschiedenen Video-Inputs und startet eine Aufnahme ueber OBS Studio. Nach Beendigung der Aufnahme wird das Video optional nach Kills analysiert und automatisch geschnitten.
+
 Demo-Video:  https://www.youtube.com/watch?v=4eHSZeGT5_I
 
 # Motivation
