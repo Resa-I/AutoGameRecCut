@@ -131,7 +131,7 @@ Per WebSocket (inkl. Authentifizierung) werden Echtzeit-Kommandos an OBS gesende
 - Unit-Tests und Integrations-Tests
 - Log in der `GuiView` verbessern
 - Refactor der Controller
-- `requirements.txt` erstellen
+- `Requirements.txt` erstellen
 
 - Schlafmodus verhindern!
 
