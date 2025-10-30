@@ -8,7 +8,7 @@
 Analyzes frames from various video inputs and triggers recording via OBS Studio.  
 After recording ends, the video is optionally analyzed for kills and automatically trimmed.  
 
-German Demo video: https://www.youtube.com/watch?v=4eHSZeGT5_I
+Demo video (in German): https://www.youtube.com/watch?v=4eHSZeGT5_I
 
 # Motivation
 I started experimenting with YOLOv8 and wanted to build my first real-time application:
