@@ -133,5 +133,5 @@ Per WebSocket (inkl. Authentifizierung) werden Echtzeit-Kommandos an OBS gesende
 - Refactor der Controller
 - `requirements.txt` erstellen
 
-- schlafmodus verhindern!
+- Schlafmodus verhindern!
 
