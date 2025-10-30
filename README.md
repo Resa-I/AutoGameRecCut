@@ -33,8 +33,8 @@ I started experimenting with YOLOv8 and wanted to build my first real-time appli
   ### Custom MVC (split)
   -  Model:  loops, analyzers, capture implementations (logic & data flow).  
   -  Controller (split): 
-    -  ModelController:  orchestrates model events and manages loops/jobs.
-    -  GuiController:  UI adapter, reads Model→GUI events and sends GUI→Model commands.
+  -  ModelController:  orchestrates model events and manages loops/jobs.
+  -  GuiController:  UI adapter, reads Model→GUI events and sends GUI→Model commands.
   -  View:  `GuiView` – pure presentation layer.
    
   ### Observer Pattern (Event Queues)
