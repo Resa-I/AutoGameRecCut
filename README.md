@@ -7,6 +7,7 @@
 
 Analyzes frames from various video inputs and triggers recording via OBS Studio.  
 After recording ends, the video is optionally analyzed for kills and automatically trimmed.  
+
 German Demo video: https://www.youtube.com/watch?v=4eHSZeGT5_I
 
 # Motivation
